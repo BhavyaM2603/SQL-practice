@@ -1,0 +1,11 @@
+Q 17) Show unique birth years from patients and order them by ascending.
+select distinct year(birth_date) AS birth_year
+from patients 
+order by birth_year asc
+
+Q18) Show unique first names from the patients table which only occurs once in the list.
+
+Q19) Show patient_id and first_name from patients where their first_name start and ends with 's' and is at least 6 characters long.
+SELECT patient_id, first_name FROM patients where first_name LIKE 's____%s'
+
+Q20) Show patient_id, first_name, last_name from patients whos diagnosis is 'Dementia'.
